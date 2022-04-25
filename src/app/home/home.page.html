@@ -14,7 +14,7 @@
 
   <ion-list>
     <ion-item-sliding *ngFor="let item of allCountries$ | async">
-      <ion-item lines="inset">
+      <ion-item lines="inset" class="country" (click)="getLitsOfHolidaysInACountry(item.code)">
         <ion-label class="ion-text-wrap">
           <ion-text color="primary">
             <h1>{{item.name}}</h1>
