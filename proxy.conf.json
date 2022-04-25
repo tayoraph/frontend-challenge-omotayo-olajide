@@ -1,0 +1,13 @@
+{
+ 
+    
+    "/planAProxy/*": {
+      "target": "https://api.m3o.com/",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/planAProxy": ""
+      }
+    }
+  }
